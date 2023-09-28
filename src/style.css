@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital@0;1&display=swap');
+
+body, select, input, button {
+    font-family: 'MuseoModerno', cursive;
+}
+
+#underline {
+    text-decoration-line: underline;
+}
+
+#throughline {
+    text-decoration-line: line-through;
+}
