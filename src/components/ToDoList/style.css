@@ -1,0 +1,32 @@
+li {
+    list-style: none;
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ul {
+    padding: 0;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half {
+    width: 25%;
+}
+
+button:hover {
+    background-color: #5766EB;
+    color: white;
+}
+
+.true {
+    background-color: #CDEC85;
+    border: solid 1px #CDEC85;
+}

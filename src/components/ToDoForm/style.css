@@ -1,13 +1,12 @@
 .form {
-    border: solid 1px #5766EB;
+    border: solid 1px black;
     border-radius: 10px;
     background-color: white;
     padding: 10px;
-    display: flex-column;
-    height: 110px;
-    width: 25.5%;
+    width: 60%;
+    margin: auto;
 }
 
 select, button {
-    width: 95%;
+    width: 25%;
 }
