@@ -2,8 +2,6 @@
 
 body {
     background-color: #5766EB;
-    width: 50%;
-    margin: auto;
 }
 
 body, select, input, button {
@@ -42,18 +40,13 @@ button.green:hover {
 }
 
 .app {
-    /* display: flex;
-    justify-content: space-around;
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr; 
     grid-template-areas: 
-        ". .";  */
-    display: flex-column;
-    align-items: center;
+        ". ."; 
 }
 
 h1 {
     font-size: 200%;
-    text-align: center;
 }
