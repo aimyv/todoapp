@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 export default function SortAndFilter({todoList, setTodoList, isChronological, setIsChonological, setStatus}) {
     function handleStatus(e) {
@@ -6,19 +7,14 @@ export default function SortAndFilter({todoList, setTodoList, isChronological, s
     }
     return (
         <div class='border'>
-                <h2>Sort</h2>
-
                 <button onClick={()  => {
                     const nextList = [...todoList];
                     nextList.reverse();
                     setTodoList(nextList);
                     setIsChonological(!isChronological);
                 }}>
-                    {isChronological ? 'Date Added 👈' : 'Date Added 👉'}
+                    {isChronological ? 'Date Added 👆' : 'Date Added 👇'}
                 </button>
-
-                <br /><br />
-                <h2>Filter</h2>
                 <select onChange={handleStatus} className="filter-todo">
                     <option value="all">All</option>
                     <option value="completed">Completed</option>

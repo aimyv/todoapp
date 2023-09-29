@@ -1,0 +1,13 @@
+.form {
+    border: solid 1px #5766EB;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    display: flex-column;
+    height: 110px;
+    width: 25.5%;
+}
+
+select, button {
+    width: 95%;
+}

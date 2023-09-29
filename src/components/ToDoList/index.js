@@ -1,9 +1,9 @@
 import React from 'react'
+import './style.css'
 
 export default function ToDoList({filteredTodos, todoList, setTodoList}) {
     return (
         <div class='border'>
-            <h2>To-dos</h2>
             <ul>
                 {
                     filteredTodos.map(todo => (

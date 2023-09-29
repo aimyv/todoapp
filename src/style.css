@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital@0;1&display=swap');
 
+body {
+    background-color: #5766EB;
+}
+
 body, select, input, button {
     font-family: 'MuseoModerno', cursive;
+}
+
+h1 {
+    color: white;
 }
 
 #underline {
@@ -10,4 +18,32 @@ body, select, input, button {
 
 #throughline {
     text-decoration-line: line-through;
+}
+
+select, input, button {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button {
+    background-color: white;
+}
+
+.green {
+    background-color: #CDEC85;
+}
+
+.app {
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+        ". ."; 
+}
+
+h1 {
+    font-size: 200%;
 }

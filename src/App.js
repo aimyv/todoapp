@@ -34,13 +34,13 @@ export default function App() {
     const filteredTodos = filterHandler()
 
     return (
-        <div>
-            <h1><span id='underline'>To Do</span> or <span id='throughline'>Not</span> To Do?</h1>
+        <div className='app'>
+            <div>
+              <h1><span id='underline'>To Do</span> or <span id='throughline'>Not</span> To Do?</h1>
+              <SortAndFilter todoList={todoList} setTodoList={setTodoList} isChronological={isChronological} setIsChonological={setIsChonological} setStatus={setStatus}/>
+              <ToDoList filteredTodos={filteredTodos} todoList={todoList} setTodoList={setTodoList} />  
+            </div>
             <ToDoForm todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList} />
-            <br /><br />
-            <SortAndFilter todoList={todoList} setTodoList={setTodoList} isChronological={isChronological} setIsChonological={setIsChonological} setStatus={setStatus}/>
-            <br /><br />
-            <ToDoList filteredTodos={filteredTodos} todoList={todoList} setTodoList={setTodoList} />
         </div>
     )
 }
