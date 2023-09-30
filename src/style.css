@@ -10,6 +10,7 @@ body, select, input, button {
 
 h1 {
     color: white;
+    font-size: 300%;
 }
 
 #underline {
@@ -45,8 +46,4 @@ button.green:hover {
     grid-template-rows: 1fr; 
     grid-template-areas: 
         ". ."; 
-}
-
-h1 {
-    font-size: 200%;
 }
