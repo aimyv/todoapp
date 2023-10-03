@@ -37,7 +37,7 @@ export default function App() {
         <div className='app'>
             <div>
                 <h1><span id='underline'>To Do</span> or <span id='throughline'>Not</span> To Do?</h1>
-                <br />
+                {/* <br /> */}
                 <SortAndFilter todoList={todoList} setTodoList={setTodoList} isChronological={isChronological} setIsChonological={setIsChonological} setStatus={setStatus}/>
                 <ToDoList filteredTodos={filteredTodos} todoList={todoList} setTodoList={setTodoList} />
             </div>

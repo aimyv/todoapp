@@ -11,6 +11,7 @@ body, select, input, button {
 h1 {
     color: white;
     font-size: 300%;
+    text-align: center;
 }
 
 #underline {
