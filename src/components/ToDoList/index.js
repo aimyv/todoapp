@@ -3,7 +3,7 @@ import './style.css'
 
 export default function ToDoList({filteredTodos, todoList, setTodoList}) {
     return (
-        <div class='border'>
+        <div className='border'>
             <ul>
                 {
                     filteredTodos.map(todo => (

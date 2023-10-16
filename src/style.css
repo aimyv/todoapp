@@ -43,9 +43,31 @@ button.green:hover {
 }
 
 .app {
-    display: grid; 
+    /* display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr; 
     grid-template-areas: 
+        ". .";  */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.4fr 1.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". ."
         ". ."; 
+}
+
+@media only screen and (max-width: 920px) {
+    #hide {
+        display: nonw;
+    }
+    .app {
+        display: flex;
+        flex-direction: column;
+    }
+    #notform {
+        order: 1;
+        width: 70%;
+        margin: auto;
+    }
 }

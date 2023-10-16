@@ -6,7 +6,7 @@ export default function SortAndFilter({todoList, setTodoList, isChronological, s
         setStatus(e.target.value)
     }
     return (
-        <div class='border'>
+        <div className='border'>
                 <button className='white' onClick={()  => {
                     const nextList = [...todoList];
                     nextList.reverse();
