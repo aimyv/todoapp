@@ -30,3 +30,13 @@ button:hover {
     background-color: #CDEC85;
     border: solid 1px #CDEC85;
 }
+
+@media only screen and (max-width: 460px) {
+    .buttons {
+        flex-direction: column;
+    }
+    .half {
+        width: 50%;
+        margin: 5px auto;
+    }
+}

@@ -2,3 +2,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 350px) {
+    .border {
+        flex-direction: column;
+    }
+}

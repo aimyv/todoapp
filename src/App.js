@@ -35,14 +35,7 @@ export default function App() {
 
     return (
         <div className='app'>
-            {/* <div>
-                <h1><span id='underline'>To Do</span> or <span id='throughline'>Not</span> To Do?</h1>
-                <SortAndFilter todoList={todoList} setTodoList={setTodoList} isChronological={isChronological} setIsChonological={setIsChonological} setStatus={setStatus}/>
-                <ToDoList filteredTodos={filteredTodos} todoList={todoList} setTodoList={setTodoList} />
-            </div>
-            <ToDoForm todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList} />       */}
             <h1><span id='underline'>To Do</span> or <span id='throughline'>Not</span> To Do?</h1>
-            {/* <ToDoForm todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList} />  */}
             <div id='hide'></div>
             <div id='notform'>
                 <SortAndFilter todoList={todoList} setTodoList={setTodoList} isChronological={isChronological} setIsChonological={setIsChonological} setStatus={setStatus}/>
