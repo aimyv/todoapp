@@ -9,6 +9,7 @@ body, select, input, button {
 }
 
 h1 {
+    margin-top: 5%;
     color: white;
     font-size: 300%;
     text-align: center;

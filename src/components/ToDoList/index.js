@@ -22,7 +22,7 @@ export default function ToDoList({filteredTodos, todoList, setTodoList}) {
                                     return el
                                     }))
                             }>
-                                {!todo.done ? 'Complete' : 'Undo'}
+                                {!todo.done ? 'Complete ✅' : 'Undo ↩︎'}
                             </button>
                             <button className='half' onClick={() => 
                                 setTodoList(
@@ -31,7 +31,7 @@ export default function ToDoList({filteredTodos, todoList, setTodoList}) {
                                     )
                                 )
                             }>
-                                Delete
+                                Delete ❌
                             </button>
                             </div>
                         </li>

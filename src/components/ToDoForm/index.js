@@ -15,15 +15,11 @@ export default function ToDoForm({todo, setTodo, todoList, setTodoList}) {
     return (
         <div className='form'>
             <input placeholder='Write a todo' name='description' value={todo.description} onChange={handleChange} />
-
-            {/* <br /> */}
             <select id="priority" name="priority" value={todo.priority} onChange={handleChange}>
                 <option value="high">High</option>
                 <option value="medium">Medium</option>
                 <option value="low">Low</option>
             </select>
-
-            {/* <br /> */}
             <button className='green' onClick={() => {
                 setTodoList([
                     { 
@@ -33,7 +29,7 @@ export default function ToDoForm({todo, setTodo, todoList, setTodoList}) {
                     },
                     ...todoList])
             }}>
-                    Add To-Do
+                    Add To-Do ＋
             </button>
         </div>
     )
