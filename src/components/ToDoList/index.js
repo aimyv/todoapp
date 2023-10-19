@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import { Check } from 'react-feather'
 
 export default function ToDoList({filteredTodos, todoList, setTodoList}) {
     return (
