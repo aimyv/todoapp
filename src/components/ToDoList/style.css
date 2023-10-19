@@ -41,6 +41,12 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 310px) {
+    .half {
+        font-size: 0.7em;
+    }
+}
+
 small {
     color:rgb(62, 62, 62); 
 }
