@@ -10,7 +10,7 @@ export default function ToDoList({filteredTodos, todoList, setTodoList}) {
                         <li key={todo.id} className={`${todo.done}`}>
                             {todo.description} 
                             <br />
-                            ({todo.priority.charAt(0).toUpperCase()+todo.priority.slice(1)})
+                            <small>{todo.priority.charAt(0).toUpperCase()+todo.priority.slice(1)}</small>
                             <div className='buttons'>
                                 <button className='half' onClick={() => 
                                 setTodoList(todoList.map((el) => {

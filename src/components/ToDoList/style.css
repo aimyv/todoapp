@@ -40,3 +40,7 @@ button:hover {
         margin: 5px auto;
     }
 }
+
+small {
+    color:rgb(62, 62, 62); 
+}
