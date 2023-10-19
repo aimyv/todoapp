@@ -8,3 +8,8 @@
         flex-direction: column;
     }
 }
+
+.white:hover {
+    background-color: white;
+    color: black;
+}

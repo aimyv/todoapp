@@ -44,3 +44,7 @@ button:hover {
 small {
     color:rgb(62, 62, 62); 
 }
+
+#delete:hover {
+    background-color: rgb(223, 61, 61);
+}

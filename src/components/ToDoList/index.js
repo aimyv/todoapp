@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import { Check } from 'react-feather'
 
 export default function ToDoList({filteredTodos, todoList, setTodoList}) {
     return (
@@ -22,9 +23,9 @@ export default function ToDoList({filteredTodos, todoList, setTodoList}) {
                                     return el
                                     }))
                             }>
-                                {!todo.done ? 'Complete ✅' : 'Undo ↩︎'}
+                                {!todo.done ? 'Complete ✅' : 'Undo ⏮'}
                             </button>
-                            <button className='half' onClick={() => 
+                            <button id='delete' className='half' onClick={() => 
                                 setTodoList(
                                     todoList.filter(i =>
                                         i.id !== todo.id
