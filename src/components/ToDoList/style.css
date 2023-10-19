@@ -48,3 +48,8 @@ small {
 #delete:hover {
     background-color: rgb(223, 61, 61);
 }
+
+svg {
+    vertical-align: bottom; /* ADDED */
+    padding-bottom: 5px;
+}

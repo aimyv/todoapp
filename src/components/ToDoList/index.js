@@ -1,5 +1,7 @@
 import React from 'react'
 import './style.css'
+import { FiTrash2, FiCheck } from "react-icons/fi";
+import { MdOutlineUndo } from "react-icons/md"
 
 export default function ToDoList({filteredTodos, todoList, setTodoList}) {
     return (
@@ -22,7 +24,8 @@ export default function ToDoList({filteredTodos, todoList, setTodoList}) {
                                     return el
                                     }))
                             }>
-                                {!todo.done ? 'Complete ✅' : 'Undo ⏮'}
+                                    {!todo.done ? 'Complete ' : 'Undo '}
+                                    {!todo.done ? <FiCheck /> : <MdOutlineUndo />}
                             </button>
                             <button id='delete' className='half' onClick={() => 
                                 setTodoList(
@@ -31,7 +34,7 @@ export default function ToDoList({filteredTodos, todoList, setTodoList}) {
                                     )
                                 )
                             }>
-                                Delete ❌
+                                Delete <FiTrash2/>
                             </button>
                             </div>
                         </li>
