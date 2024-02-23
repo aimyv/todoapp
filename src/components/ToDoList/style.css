@@ -17,13 +17,8 @@ ul {
     justify-content: space-between;
 }
 
-.half {
-    width: 25%;
-}
-
 button:hover {
-    background-color: #5766EB;
-    color: white;
+    background-color: #CDEC85;
 }
 
 .true {
@@ -35,6 +30,7 @@ button:hover {
     .buttons {
         flex-direction: column;
     }
+
     .half {
         width: 50%;
         margin: 5px auto;
@@ -48,14 +44,19 @@ button:hover {
 }
 
 small {
-    color:rgb(62, 62, 62); 
+    color: rgb(62, 62, 62);
 }
 
 #delete:hover {
     background-color: rgb(223, 61, 61);
+    color: white;
+}
+
+#done:hover {
+    color: black;
 }
 
 svg {
-    vertical-align: bottom; /* ADDED */
+    vertical-align: bottom;
     padding-bottom: 5px;
 }

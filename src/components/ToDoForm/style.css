@@ -8,3 +8,7 @@
     flex-direction: column;
     width: 60%;
 }
+
+#submit:hover {
+    background-color: #beec54;
+}

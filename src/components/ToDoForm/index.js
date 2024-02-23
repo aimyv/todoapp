@@ -3,7 +3,7 @@ import './style.css'
 
 let nextId = 0
 
-export default function ToDoForm({todo, setTodo, todoList, setTodoList}) {
+export default function ToDoForm({ todo, setTodo, todoList, setTodoList }) {
 
     function handleChange(e) {
         setTodo({
@@ -20,16 +20,16 @@ export default function ToDoForm({todo, setTodo, todoList, setTodoList}) {
                 <option value="medium">Medium</option>
                 <option value="low">Low</option>
             </select>
-            <button className='green' onClick={() => {
+            <button id='submit' className='green' onClick={() => {
                 setTodoList([
-                    { 
-                        id: nextId++, description: todo.description, 
-                        priority: todo.priority, 
-                        done: todo.done 
+                    {
+                        id: nextId++, description: todo.description,
+                        priority: todo.priority,
+                        done: todo.done
                     },
                     ...todoList])
             }}>
-                    Add To-Do ＋
+                Add To-Do ＋
             </button>
         </div>
     )
