@@ -3,8 +3,8 @@ li {
     background-color: white;
     border: solid 1px white;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 15px;
+    margin: 10px 5px;
 }
 
 ul {
@@ -22,37 +22,22 @@ ul {
     border: solid 1px #CDEC85;
 }
 
-@media only screen and (max-width: 460px) {
-    .buttons {
-        flex-direction: column;
-    }
-
-    .half {
-        width: 50%;
-        margin: 5px auto;
-    }
-}
-
-@media only screen and (max-width: 310px) {
-    .half {
-        font-size: 0.7em;
-    }
-}
-
-small {
-    color: rgb(62, 62, 62);
-}
-
 #delete {
     margin-right: 0;
-    background-color: rgb(235, 27, 27);
-    color: white;
-    border: solid 1px rgb(223, 61, 61);
+    color: rgb(235, 27, 27);
+    background-color: white;
+    border: solid 1.5px rgb(235, 27, 27);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 6px;
+    gap: 6px;
 }
 
 #delete:hover {
-    background-color: rgb(206, 25, 25);
-    border: solid 1px rgb(179, 0, 0);
+    background-color: rgb(235, 27, 27);
+    border: solid 1.5px rgb(235, 27, 27);
+    color: white;
 }
 
 #done {
@@ -61,26 +46,77 @@ small {
 
 .complete {
     background-color: #CDEC85;
-    border: solid 1px #CDEC85;
+    border: solid 1.5px #CDEC85;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 6px;
 }
 
 .complete:hover {
     background-color: #B9E36D;
-    border: solid 1px #B9E36D;
+    border: solid 1.5px #B9E36D;
 }
 
 .undo {
-    background-color: #5766EB;
-    color: white;
-    border: solid 1px #5766EB;
+    color: #5766EB;
+    background-color: white;
+    border: solid 1.5px #5766EB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 6px;
 }
 
 .undo:hover {
-    background-color: #3A4C9B;
-    border: solid 1px #3A4C9B;
+    background-color: #5766EB;
+    color: white;
+    border: solid 1.5px #5766EB;
 }
 
-svg {
-    vertical-align: bottom;
-    padding-bottom: 5px;
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.chip {
+    border-radius: 20px;
+    padding: 3px 15px;
+    font-size: 0.8rem;
+}
+
+.low {
+    background-color: #cbf2cf;
+    color: #364838;
+}
+
+.medium {
+    background-color: #fdefd1;
+    color: #8e6300;
+}
+
+.high {
+    background-color: #ffe0dc;
+    color: #ba2916;
+}
+
+@media only screen and (max-width: 460px) {
+    .buttons {
+        gap: 5px;
+    }
+
+    .half {
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .half {
+        font-size: 0.7em;
+    }
 }

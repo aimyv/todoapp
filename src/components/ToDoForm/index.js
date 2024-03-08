@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import { FiPlus } from 'react-icons/fi'
 
 let nextId = 0
 
@@ -29,7 +30,7 @@ export default function ToDoForm({ todo, setTodo, todoList, setTodoList }) {
                     },
                     ...todoList])
             }}>
-                Add To-Do ＋
+                <FiPlus /> Add To-Do
             </button>
         </div>
     )
