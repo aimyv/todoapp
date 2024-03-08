@@ -14,7 +14,7 @@ export default function ToDoList({ filteredTodos, todoList, setTodoList }) {
                             <br />
                             <small>{todo.priority.charAt(0).toUpperCase() + todo.priority.slice(1)}</small>
                             <div className='buttons'>
-                                <button id='done' className='half' onClick={() =>
+                                <button id='done' className={`half ${!todo.done ? 'complete' : 'undo'}`} onClick={() =>
                                     setTodoList(todoList.map((el) => {
                                         if (todo.id === el.id) {
                                             return {

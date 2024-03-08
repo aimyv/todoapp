@@ -17,10 +17,6 @@ ul {
     justify-content: space-between;
 }
 
-button:hover {
-    background-color: #CDEC85;
-}
-
 .true {
     background-color: #CDEC85;
     border: solid 1px #CDEC85;
@@ -47,13 +43,41 @@ small {
     color: rgb(62, 62, 62);
 }
 
-#delete:hover {
-    background-color: rgb(223, 61, 61);
+#delete {
+    margin-right: 0;
+    background-color: rgb(235, 27, 27);
     color: white;
+    border: solid 1px rgb(223, 61, 61);
 }
 
-#done:hover {
-    color: black;
+#delete:hover {
+    background-color: rgb(206, 25, 25);
+    border: solid 1px rgb(179, 0, 0);
+}
+
+#done {
+    margin-left: 0;
+}
+
+.complete {
+    background-color: #CDEC85;
+    border: solid 1px #CDEC85;
+}
+
+.complete:hover {
+    background-color: #B9E36D;
+    border: solid 1px #B9E36D;
+}
+
+.undo {
+    background-color: #5766EB;
+    color: white;
+    border: solid 1px #5766EB;
+}
+
+.undo:hover {
+    background-color: #3A4C9B;
+    border: solid 1px #3A4C9B;
 }
 
 svg {
