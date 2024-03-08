@@ -10,9 +10,10 @@ export default function ToDoList({ filteredTodos, todoList, setTodoList }) {
                 {
                     filteredTodos.map(todo => (
                         <li key={todo.id} className={`${todo.done}`}>
-                            {todo.description}
-                            <br />
-                            <small>{todo.priority.charAt(0).toUpperCase() + todo.priority.slice(1)}</small>
+                            <div className='info'>
+                                {todo.description}
+                                <div className={`chip ${todo.priority}`}>{todo.priority}</div>
+                            </div>
                             <div className='buttons'>
                                 <button id='done' className={`half ${!todo.done ? 'complete' : 'undo'}`} onClick={() =>
                                     setTodoList(todoList.map((el) => {
@@ -24,8 +25,8 @@ export default function ToDoList({ filteredTodos, todoList, setTodoList }) {
                                         return el
                                     }))
                                 }>
-                                    {!todo.done ? 'Complete ' : 'Undo '}
                                     {!todo.done ? <FiCheck /> : <MdOutlineUndo />}
+                                    {!todo.done ? 'Done ' : 'Undo '}
                                 </button>
                                 <button id='delete' className='half' onClick={() =>
                                     setTodoList(
@@ -34,7 +35,7 @@ export default function ToDoList({ filteredTodos, todoList, setTodoList }) {
                                         )
                                     )
                                 }>
-                                    Delete <FiTrash2 />
+                                    <FiTrash2 />Delete
                                 </button>
                             </div>
                         </li>

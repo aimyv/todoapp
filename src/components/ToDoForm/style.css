@@ -6,7 +6,17 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 67%;
+}
+
+@media screen and (min-width: 920px) {
+    .form {
+        width: 40%;
+        position: absolute;
+        top: 155px;
+        right: 10px;
+    }
+
 }
 
 #submit:hover {

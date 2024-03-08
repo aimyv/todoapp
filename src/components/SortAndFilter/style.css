@@ -4,8 +4,8 @@
 }
 
 @media only screen and (max-width: 350px) {
-    .border {
-        flex-direction: column;
+    .control {
+        font-size: 0.8rem;
     }
 }
 

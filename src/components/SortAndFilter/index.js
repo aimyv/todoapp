@@ -7,7 +7,7 @@ export default function SortAndFilter({todoList, setTodoList, isChronological, s
     }
     return (
         <div className='border'>
-                <button className='white' onClick={()  => {
+                <button className='white control' onClick={()  => {
                     const nextList = [...todoList];
                     nextList.reverse();
                     setTodoList(nextList);
@@ -15,7 +15,7 @@ export default function SortAndFilter({todoList, setTodoList, isChronological, s
                 }}>
                     {isChronological ? 'Date Added 👆' : 'Date Added 👇'}
                 </button>
-                <select onChange={handleStatus} className="filter-todo">
+                <select onChange={handleStatus} className="control">
                     <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="uncompleted">Uncompleted</option>
