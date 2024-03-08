@@ -36,6 +36,11 @@ button {
 
 button {
     background-color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    transition: 0.3s;
 }
 
 button.green {
