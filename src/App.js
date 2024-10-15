@@ -1,6 +1,25 @@
 import React, { useState } from 'react'
-import { SortAndFilter, ToDoForm, ToDoList } from './components';
+import { SortAndFilter, ToDoForm, ToDoTable } from './organisms';
+import styled from 'styled-components';
 import './style.css'
+
+const Body = styled.div`
+    width: 50vw;
+    @media (max-width: 900px) {
+        width: 75vw;
+    }
+    @media (max-width: 700px) {
+        width: 90vw;
+    }
+`
+
+const Actions = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+    gap: 0.5rem;  
+`
 
 let nextId = 0
 
@@ -13,7 +32,7 @@ export default function App() {
     })
     const [todoList, setTodoList] = useState([])
     const [isChronological, setIsChonological] = useState(false)
-    const [status, setStatus] = useState('');
+    const [status, setStatus] = useState('all');
 
     function filterHandler() {
         if (status === 'completed') {
@@ -34,16 +53,13 @@ export default function App() {
     const filteredTodos = filterHandler()
 
     return (
-        <>
-        <h1><span id='underline'>To Do</span> or <span id='throughline'>Not</span> To Do?</h1>
-        <div className='app'>
-            <div id='notform'>
-                <SortAndFilter todoList={todoList} setTodoList={setTodoList} isChronological={isChronological} setIsChonological={setIsChonological} setStatus={setStatus}/>
-                <ToDoList filteredTodos={filteredTodos} todoList={todoList} setTodoList={setTodoList} />
-            </div>  
-            <ToDoForm todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList} /> 
-            <br />
-        </div>
-        </>
+        <Body>
+            <h1>To Do or Not To Do?</h1>
+            <Actions>
+                <SortAndFilter todoList={todoList} setTodoList={setTodoList} isChronological={isChronological} setIsChonological={setIsChonological} status={status} setStatus={setStatus}/>
+                <ToDoForm todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList} isChronological={isChronological} /> 
+            </Actions>
+            <ToDoTable filteredTodos={filteredTodos} todoList={todoList} setTodoList={setTodoList} />
+        </Body>
     )
 }
